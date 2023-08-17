@@ -190,7 +190,7 @@ int main()
     GiphyClient client(io);
     client.connect();
 
-    printf("Welcome to Giphy Console App\n Type help for a list of commands\n");
+    printf("Welcome to Giphy Console App\nType help for a list of commands\n");
     std::string input;
 
     while (true)
