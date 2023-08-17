@@ -10,7 +10,7 @@ Welcome to the Giphy Console App! This application allows you to interactively s
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/giphy-console-app.git
+git clone https://github.com/abrhamgg/giphy-console-app.git
 ```
 
 ### Navigate to the Directory
@@ -28,6 +28,11 @@ The project includes a Makefile that simplifies the compilation and execution pr
 ```bash
 make
 ```
+OR
+```
+g++ -std=c++11 -Wall -I./include src/main.cpp src/helpers.cpp -o ./build/main
+
+```
 
 This will generate the "main" executable in the "build" directory.
 
@@ -35,6 +40,10 @@ This will generate the "main" executable in the "build" directory.
 
 ```bash
 make run
+```
+OR
+```
+./build/main
 ```
 
 This will execute the "main" program.

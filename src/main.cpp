@@ -18,44 +18,6 @@ using namespace asio;
 using namespace nlohmann;
 using namespace asio::ip;
 
-void init()
-{
-    printf("Welcome to Giphy Console App\n");
-    std::string input;
-
-    std::cout << "Enter a Command: ";
-
-    while (true)
-    {
-        std::getline(std::cin, input);
-        std::vector<std::string> result = split_string(input);
-        if (input == "help")
-        {
-            printf("Commands:\n");
-            printf("next: Next Gif\n");
-            printf("search <search term>: Search for a Gif\n");
-            printf("cancel: Exit the program\n");
-        }
-        else if (input == "next")
-        {
-            printf("Next Gif Will be Presented\n");
-        }
-        else if (input == "cancel")
-        {
-            printf("Good Bye\n");
-            break;
-        }
-        else if (result[0] == "search" && result.size() == 2)
-        {
-            printf("Searching for %s\n", result[1].c_str());
-        }
-        else
-        {
-            printf("Invalid Command\n");
-        }
-    }
-}
-
 class GiphyClient
 {
 private:
@@ -81,12 +43,12 @@ public:
     {
         asio::ip::tcp::resolver resolver(io);
         asio::ip::tcp::endpoint endpoint = *resolver.resolve(std::string("api.giphy.com"), std::string("http")).begin();
-        cout << "Connecting to the GIPHY API..." << endl;
+
         socket.connect(endpoint);
 
         if (socket.is_open())
         {
-            cout << "Successfully connected to the GIPHY API" << endl;
+            // cout << "Successfully connected to the GIPHY API" << endl;
         }
         else
         {
@@ -228,7 +190,7 @@ int main()
     GiphyClient client(io);
     client.connect();
 
-    printf("Welcome to Giphy Console App\n");
+    printf("Welcome to Giphy Console App\n Type help for a list of commands\n");
     std::string input;
 
     while (true)
