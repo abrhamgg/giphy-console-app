@@ -10,7 +10,7 @@ Welcome to the Giphy Console App! This application allows you to interactively s
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/abrhamgg/giphy-console-app.git
+git clone https://github.com/your-username/giphy-console-app.git
 ```
 
 ### Navigate to the Directory
@@ -52,11 +52,48 @@ Once the application is running, you can interact with it using the command-line
 - `search <search term>`: Search for GIFs related to the specified search term.
     -   `next`: Display the next set of GIFs from the search results.
     - `cancel`: Stop ongoing operation to search a new gifs.
+- `rank <rank>`: Count the number of stickers with the specified rank
 - `exit`: Exit the program.
 
-### Exit the Application
+## Example Usage
 
-To exit the application, use the `exit` command.
+1. Search for GIFs using a search term:
+
+   ```
+   Enter a command: search cat
+   ```
+
+   This will display GIFs related to the search term "cat."
+
+2. Navigate to the next page of search results:
+
+   ```
+   Enter a command: next
+   ```
+
+   This will load the next page of search results if available.
+   ```
+    $ cancel
+   ```
+   This will take you to the homepage of the program.
+
+3. Count stickers with a specific rank:
+
+   ```
+   Enter a command: rank G
+   ```
+
+   This will display the count of stickers with the rank "G."
+
+4. Exit the program:
+
+   ```
+   Enter a command: exit
+   ```
+
+   This will exit the program.
+
+
 
 ## Requirements
 

@@ -205,6 +205,19 @@ public:
         }
     }
 
+    int getCountByRank(const std::string &rank)
+    {
+        int count = 0;
+        for (const auto &sticker : stickers)
+        {
+            if (sticker.rank == rank)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
 private:
     json j;
 };
@@ -259,6 +272,11 @@ int main()
                     printf("Invalid Command\n");
                 }
             }
+        }
+        else if (result[0] == "rank" && result.size() == 2)
+        {
+            cout << "Rank: " << result[1] << endl;
+            cout << "Count: " << client.getCountByRank(result[1]) << endl;
         }
         else
         {
