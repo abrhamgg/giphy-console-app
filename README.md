@@ -56,7 +56,7 @@ Once the application is running, you can interact with it using the command-line
 
 ### Exit the Application
 
-To exit the application, use the `cancel` command.
+To exit the application, use the `exit` command.
 
 ## Requirements
 
