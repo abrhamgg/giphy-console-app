@@ -10,7 +10,7 @@ Welcome to the Giphy Console App! This application allows you to interactively s
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/giphy-console-app.git
+git clone https://github.com/abrhamgg/giphy-console-app.git
 ```
 
 ### Navigate to the Directory
