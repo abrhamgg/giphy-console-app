@@ -203,7 +203,7 @@ int main()
             printf("Commands:\n");
             printf("next: Next Gifs\n");
             printf("search <search term>: Search for a Gif\n");
-            printf("cancel: Exit the program\n");
+            printf("exit: Exit the program\n");
         }
         else if (input == "exit")
         {
