@@ -1,6 +1,4 @@
-Of course! Here's the entire content in Markdown format that you can copy:
 
-```markdown
 # Giphy Console App
 
 Welcome to the Giphy Console App! This application allows you to interactively search for and view GIFs using the GIPHY API.
